@@ -14,9 +14,6 @@ jobs:
     - name: run C# tests
       run: dotnet test
 
-    - name: navigate
-      uses: ./DotnetTemplate.web
-
     - name: build Typescript code
       run: npm ci && npm run build
 
