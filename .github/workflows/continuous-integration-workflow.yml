@@ -15,14 +15,14 @@ jobs:
       run: dotnet test
 
     - name: build Typescript code
-      working-directory: DotnetTemplate.web
-      run: npm install && npm run build
+      working-directory: ./DotnetTemplate.Web
+      run: npm i && npm run build
 
     - name: run Typescript linter
-      working-directory: DotnetTemplate.web
+      working-directory: ./DotnetTemplate.Web
       run: npm run lint
 
     - name: run Typescript tests
-      working-directory: /DotnetTemplate.web
+      working-directory: ./DotnetTemplate.Web
       run: npm t
         
